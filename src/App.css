@@ -1,38 +1,91 @@
 .App {
+  background-image:url(coldsky.jpg);
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  color:white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Main{
+  
+  height:100vh;
+   display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+padding:20px
+ 
+}
+.Box{
+  
+  height: 400px;
+  width: 400px;
+  position: relative;
+ border: solid black 1px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #26c6da, #00695c);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  overflow: hidden;
+  
+}
+.search{
+  width:100%;
 }
 
-.App-link {
-  color: #61dafb;
+.temperature{
+  
+
+  width:auto;
+  height:12rem;
+}
+.searchbar{
+  margin-top: 1rem;
+  padding-left: 0.8rem;
+  font-size: medium;
+  height: 40px;
+  width:90%;
+  border-radius: 20px;
+  border:none;
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.726);
+  outline: none;
+}
+.searchbar:focus{
+  border:black 0.5px;
+  background-color: rgba(255, 255, 255, 0.900);
+}
+.weatherlogo{
+  height:100px;
+  width:100px;
+}
+.tempdata {
+  top:0;
+  font-size: 20px;
+  font-weight: 200%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second_box{
+  display:flex;
+  flex-direction: row;
 }
+.humiditylogo{
+  height:52px;
+  width:62px;
+}
+.windspeedlogo{
+  height:51px;
+  width: 59px;
+}
+.humidity,.windspeed{display:flex;
+  font-size:10px;
+  flex-direction: row;
+  border:black 2px;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  top:2px;
+  padding-top: 10%;
+  height:3rem;
+}
+
+
