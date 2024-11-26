@@ -13,7 +13,7 @@ function App() {
   const weatherapp=async()=>{
     const r=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=a5ef46f46ab7a195127376b2d07dde9c&units=metric`);
     const d=await r.json();
-    console.log(d);
+    //console.log(d);
     setCityname(d);
   }
   useEffect(()=>{
